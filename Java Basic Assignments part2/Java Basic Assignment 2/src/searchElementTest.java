@@ -1,0 +1,16 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class searchElementTest {
+
+	@Test
+	public void test() {
+		int[] inputElements={5,4,5,4,6};
+		searchElement newObject=new searchElement();
+		boolean exists=newObject.searchPair(inputElements,2);
+		assertTrue(exists);
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.math.*;
+public class searchElement 
+{
+	public boolean searchPair(int[] inputElements,int k)
+	{
+		boolean found;
+	for(int counter=0;counter<inputElements.length;counter++)
+	{
+		for(int innerCounter=0;innerCounter<counter;innerCounter++)
+		{
+			if(inputElements[counter]==inputElements[innerCounter] && Math.abs(innerCounter-counter)<=k)
+			{
+				found=true;
+				break;
+			}
+			else
+			{
+				 found=false;
+			}
+				
+		}
+		
+	}
+	return found;
+	}
+
+	
+}

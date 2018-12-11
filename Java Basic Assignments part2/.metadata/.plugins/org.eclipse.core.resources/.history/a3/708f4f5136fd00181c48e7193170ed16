@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import java.util.*;
+
+public class testDuplicateCharacters {
+
+	@Test
+	public void test() {
+		duplicateCharacters characterObject=new duplicateCharacters();
+		Scanner sc=new Scanner(System.in);
+		String input=sc.nextLine();
+		String result=characterObject.removeDuplicates(input);
+		assertEquals(result,"abc");
+	}
+
+}

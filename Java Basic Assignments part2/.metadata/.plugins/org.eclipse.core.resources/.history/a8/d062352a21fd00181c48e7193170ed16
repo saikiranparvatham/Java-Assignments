@@ -1,0 +1,9 @@
+
+public class searchElement {
+	public int searchPair(int[] inputElements){
+	int[] integerArray=new int[]{2,5,6,8,6,9,2,3,4};
+	return result;
+}
+
+	
+}

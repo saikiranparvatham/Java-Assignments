@@ -1,0 +1,16 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class testForPalindrome {
+
+	@Test
+	public void test() {
+		PalindromeList newlist=new PalindromeList();
+		int total=8;
+		int sum=newlist.add(2,4);
+		assertEquals(sum,total);
+	}
+
+}

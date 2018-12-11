@@ -1,0 +1,24 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import java.util.*;
+
+public class testDuplicateCharacters {
+
+	@Test
+	public void removingDuplicateCharacters() {
+		duplicateCharacters characterObject=new duplicateCharacters();
+		
+		String input="abcabcabc";
+		String result=characterObject.removeDuplicates(input);
+		assertEquals(result,"abc");
+	}
+	@Test
+	public void removingDuplicateCharacters2() {
+		duplicateCharacters characterObject2=new duplicateCharacters();
+		
+		String input="javaforschool";
+		String result2=characterObject2.removeDuplicates(input);
+		assertEquals(result2,"javforschl");
+	}
+}
