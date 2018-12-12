@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class TestForExtraSpaceDeletion {
+	
+	@Before
+	public void setUp()
+	{
+		SpaceAndWordDeletion newObject=new SpaceAndWordDeletion();
+	
+	}
+	@Test
+	public void testForExtraSpaceDeletion() {
+		String resultCheck=newObject.DeleteExtraSpaces("This   is   a    computer");
+		assertEquals(resultCheck,"This is a computer");
+	}
+
+}

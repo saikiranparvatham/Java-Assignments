@@ -1,5 +1,5 @@
 import java.util.*;
-class studentMarks
+class StudentMarks
 {
 	public static void main(String[] args)
 	{

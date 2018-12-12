@@ -1,0 +1,14 @@
+impOrt static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestPalindromeInList {
+	PalindromeInList newObject=new PalindromeInList();
+	
+	@Test
+	public void test() {
+		int result=newObject.findPalindrome(null)
+	}
+
+}

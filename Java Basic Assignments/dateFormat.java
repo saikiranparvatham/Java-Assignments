@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat;  
 import java.util.Date;
 import java.util.*;  
-class dateFormat {  
+class DateFormat {  
 public static void main(String[] args) {  
 	 String sDate1="31/12/1998";  
     Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);  

@@ -1,6 +1,6 @@
 package printArmstrong;
 
-public class printArmstrong 
+public class PrintArmstrong 
 {
 
 	public static void main(String[] args) 

@@ -1,5 +1,5 @@
 import java.util.*;
-class sequentialSort
+class SequentialSort
 {
 	public static void main(String[] args)
 	{

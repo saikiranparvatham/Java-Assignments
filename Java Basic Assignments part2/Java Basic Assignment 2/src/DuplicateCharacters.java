@@ -1,0 +1,21 @@
+
+public class DuplicateCharacters {
+
+	public String removeDuplicates(String input) {
+        int l = input.length();
+        char ch;
+        String ans="";
+         
+        for(int i=0; i<l; i++)
+        {
+            ch = input.charAt(i);
+            if(ch!=' ')
+            ans = ans + ch;
+            input = input.replace(ch,' '); //Replacing all occurrence of the current character by a space
+        }
+ 
+        
+		return ans;
+	}
+
+}

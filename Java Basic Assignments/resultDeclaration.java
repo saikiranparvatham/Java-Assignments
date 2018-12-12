@@ -2,7 +2,7 @@ package resultDeclaration;
 
 import java.util.Scanner;
 
-public class resultDeclaration {
+public class ResultDeclaration {
 
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);

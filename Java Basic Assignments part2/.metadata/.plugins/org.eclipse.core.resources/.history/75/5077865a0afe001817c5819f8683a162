@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+
+
+
+import org.junit.Test;
+
+
+public class TestPalindromeInList {
+	PalindromeInList newObject=new PalindromeInList();
+	String[] input={"abc","bgfhhj","ftghdtg","fghf","aba"};
+	
+	@Test
+	public void test() {
+		String result=newObject.findPalindrome(input);
+		assertEquals(result,"baa");
+	}
+
+}

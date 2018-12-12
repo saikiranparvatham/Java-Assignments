@@ -1,0 +1,11 @@
+
+public class DiscountCalculation {
+
+	public double CalculateDiscount(double newItem) {
+		
+		double discountAmount=(35/100)*newItem;
+		System.out.println(discountAmount);
+		return 0;
+	}
+
+}

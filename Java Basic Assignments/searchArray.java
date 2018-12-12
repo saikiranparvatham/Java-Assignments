@@ -1,5 +1,5 @@
 import java.util.*;
-class searchArray
+class SearchArray
 {
 	public static void main(String[] args)
 	{

@@ -1,0 +1,28 @@
+
+public class PalindromeInList {
+	public int findPalindrome(String[] input){
+		int index=0;
+		for(int counter=0;counter<=input.length;counter++)
+		{
+	     
+	     String str=input[counter], rev = "";
+	     
+	     int length = str.length();
+	 
+	      for ( int i = length - 1; i >= 0; i-- )
+	         rev = rev + str.charAt(i);
+	 
+	      String palindrome;
+		if (str.equals(rev))
+		{
+	         palindrome =input[counter];
+	         index=counter;
+		}
+	 
+		
+		}
+		int length=input[index].length();
+		System.out.println(index);
+		return 4;
+	}
+}

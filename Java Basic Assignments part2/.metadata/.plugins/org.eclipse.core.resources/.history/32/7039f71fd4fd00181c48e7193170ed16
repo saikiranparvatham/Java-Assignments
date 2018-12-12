@@ -1,0 +1,16 @@
+
+public class SpaceAndWordDeletion {
+	public String DeleteExtraSpaces(String input, String word, int position)
+	{
+		String[] words=input.split(" +");
+		System.out.println(words[1]);
+		String deletedSentence=input.replace(word,"");
+		
+		String result=deletedSentence.replaceAll(" +", " ");
+		System.out.println(result);
+		return result;
+	}
+
+	
+	
+}

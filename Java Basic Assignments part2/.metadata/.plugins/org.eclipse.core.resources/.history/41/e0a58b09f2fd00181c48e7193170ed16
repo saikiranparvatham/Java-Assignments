@@ -1,0 +1,13 @@
+import java.util.Arrays;
+
+
+public class FindMissingNumber {
+
+	public int findNumber(int[] arrayOfNumbers) {
+		Arrays.sort(arrayOfNumbers);
+		for(int i=0;i<3;i++)
+		System.out.println(arrayOfNumbers[i]);
+		return 0;
+	}
+
+}

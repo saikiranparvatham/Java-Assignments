@@ -1,0 +1,12 @@
+
+public class DiscountCalculation {
+
+	public int CalculateDiscount(int newItem) {
+		
+		double discount=0.35*newItem;
+		int newItemPrice=(int) (newItem-discount);
+		System.out.println(newItemPrice);
+		return newItemPrice;
+	}
+
+}

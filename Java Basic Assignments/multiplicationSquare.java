@@ -2,7 +2,7 @@ package muliplicationSquare;
 import java.*;
 import java.util.Scanner;
 
-public class multiplicationSquare 
+public class MultiplicationSquare 
 {
 
 	public static void main(String[] args) 
