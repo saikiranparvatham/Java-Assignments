@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestTelevision {
+	Television newRemote=new Television();
+	@Test
+	public void test() {
+		newRemote.turnOn();
+	}
+
+}

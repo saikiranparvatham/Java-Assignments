@@ -1,0 +1,28 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class TestTelevision {
+	static Television newRemote=new Television();
+	@BeforeClass
+	public static void setUp() {
+		
+		newRemote.turnOn();
+		
+	}
+
+	@Test
+	public void testForChannel() {
+		newRemote.setChannel(2);
+	}
+	
+	@Test
+	public void testVolumeUp() {
+		newRemote.increaseVolume();
+	}
+	
+	
+}

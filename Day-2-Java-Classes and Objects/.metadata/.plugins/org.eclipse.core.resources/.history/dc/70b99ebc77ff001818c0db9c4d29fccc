@@ -1,0 +1,69 @@
+
+public class EmployeeAssignment {
+	public int ID; 
+    public String employeeName; 
+    public double monthlyBasicSalary;
+
+    public EmployeeAssignment(int id, String name, double basicSalary) {
+    	this.ID = id;
+        this.employeeName = name;
+        this.monthlyBasicSalary = basicSalary;
+    }
+
+    public void setId(int id) {
+		this.ID = id;
+	}
+
+	
+    public int getId() {
+        return ID;
+    }
+
+    public void setName(String name) {
+        this.employeeName = name;
+    }
+
+    public String getName() {
+        return employeeName;
+    }
+
+    public void setmonthlySalary(double salary) {
+        this.monthlyBasicSalary = salary;
+    }
+
+    public double getmonthlySalary() {
+        return monthlyBasicSalary;
+    }
+	/*private double getAnnualBasic()//(return 12 * monthlyBasic;)
+	{
+		return 0;
+		
+	}
+	private double getMonthlyGrossSalary()//(monthlyBasic + hra + medical + conveyance)
+	{
+		return 0;
+		
+	}
+	private double getAnnualGrossSalary() //(12 * MonthlyGrossSalary)
+	{
+		return 0;
+		
+	}
+	private double getMonthlyDeductions() //(pf + esic + profTax)
+	{
+		return 0;
+		
+	}
+ 
+	private double getMonthlyTakeHome() //(MonthlyGrossSalary- MonthlyDeductions)
+	{
+		return 0;
+		
+	}
+	private double getAnnualTakeHome() //(12 * MonthlyTakeHome)
+	{
+		return 0;
+		
+	}*/
+	
+}

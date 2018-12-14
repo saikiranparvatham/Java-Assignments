@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class EmployeeAssignmentTest {
+	EmployeeAssignment employee1=new EmployeeAssignment(154,"ramesh yadav",20000);
+	@Test
+	public void test() {
+		String testName= employee1.getName();
+		assertEquals(testName,"ramesh yadav");
+	}
+
+}
