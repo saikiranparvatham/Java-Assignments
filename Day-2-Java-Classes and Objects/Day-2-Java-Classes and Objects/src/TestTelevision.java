@@ -29,7 +29,7 @@ public class TestTelevision {
 	@Test
 	public void testVolumeDown(){
 		newRemote.decreaseVolume();
-		
+		assertEquals(Television.volumeLevel,1);
 	}
 	
 	@Test
@@ -41,6 +41,12 @@ public class TestTelevision {
 	@Test
 	public void testChannelDown(){
 		newRemote.channelDown();
+		
+	}
+	
+	@Test
+	public void testChannelChange(){
+		newRemote.channelChange(78);
 		
 	}
 	

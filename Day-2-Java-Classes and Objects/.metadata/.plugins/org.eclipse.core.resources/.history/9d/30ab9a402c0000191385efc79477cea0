@@ -1,0 +1,20 @@
+public class Rectangle
+{
+	private double width;
+	private double length;
+	public void rectangleInitialization(double width,double length)
+	{
+		this.width=width;
+		this.length=length;
+	}
+	
+	public double Area()
+	{
+		return width*length;
+	}
+	
+	public double perimemter()
+	{
+		return 2*(width+length);
+	}
+}

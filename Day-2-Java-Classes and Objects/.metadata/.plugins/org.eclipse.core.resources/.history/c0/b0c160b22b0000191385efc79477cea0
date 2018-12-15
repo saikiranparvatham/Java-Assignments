@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class TestRectangle {
+	Rectangle newObject=new Rectangle();
+	
+	@BeforeClass
+	public void test() {
+		newObject.rectangleInitialization(4,5);
+	}
+
+}

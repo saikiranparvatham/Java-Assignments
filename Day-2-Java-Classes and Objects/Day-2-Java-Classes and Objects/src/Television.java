@@ -61,6 +61,14 @@ public class Television {
 			System.out.println("Current Channel "+channel);
 		}
 	}
+	
+	public void channelChange(int channelToChange) {
+		if (on && channelToChange>=0 && channelToChange<120 ) {
+			channel=channelToChange;
+			System.out.println("Current Channel "+channel);
+		}
+	}
+	
 
 	
 

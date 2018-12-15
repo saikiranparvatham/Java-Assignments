@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTelevision" project="Day-2-Java-Classes and Objects" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="TestTelevision" time="0.0">
-    <testcase name="test" classname="TestTelevision" time="0.0"/>
-  </testsuite>
-</testrun>

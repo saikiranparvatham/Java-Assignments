@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeAssignmentTest" project="Day-2-Java-Classes and Objects" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="EmployeeAssignmentTest" time="0.0">
-    <testcase name="testAnnualBasicSalary" classname="EmployeeAssignmentTest" time="0.0"/>
-    <testcase name="testMonthlySalary" classname="EmployeeAssignmentTest" time="0.0"/>
-    <testcase name="testName" classname="EmployeeAssignmentTest" time="0.0"/>
-    <testcase name="testId" classname="EmployeeAssignmentTest" time="0.0"/>
-  </testsuite>
-</testrun>
