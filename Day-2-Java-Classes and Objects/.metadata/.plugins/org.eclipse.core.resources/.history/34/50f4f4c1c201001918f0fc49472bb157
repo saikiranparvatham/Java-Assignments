@@ -1,0 +1,16 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestDate {
+	Date date1=new Date(4,5,2017);
+	
+	@Test
+	public void test() {
+		Date date2=new Date(3,5,2017);
+		boolean result=date1.isSmaller(date2);
+		assertFalse(result);
+	}
+
+}
