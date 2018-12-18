@@ -15,9 +15,8 @@ class Person
 	}
 	public void display()								// method to display the details of a person.
 	{	
-		Date today=new Date(17,12,2018);
-		int[] age1=dob.diff(today);
-		int age=age1[2];
+		
+		
 		System.out.println("Name:"+name+"\nDate of Birth:"+dob+"\nAge:"+age);
 																						//Person details should be displayed in the following format:
 																						//Name: Person Name

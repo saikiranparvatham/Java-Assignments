@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class TestMoneyMoneyBank {
+	MoneyMoneyBank customer1 = new MoneyMoneyBank("Ramesh kumar",2000);
+	
+	
+	@Test
+	public void testDetails() {
+		customer1.display();
+	}
+	
+	@Test
+	public void testDeposit()
+	{
+		boolean result=customer1.deposit(25000);
+		assertTrue(result);
+	}
+	
+	@AfterClass
+	public void testWithdraw()
+	{
+		boolean result=customer1.withdraw(750);
+		assertTrue(result);
+	}
+	
+}

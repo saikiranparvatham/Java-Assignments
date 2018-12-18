@@ -1,0 +1,14 @@
+
+public class Country {
+	public String nameOfCountry;
+	public long population;
+	public long area;
+	
+	public Country(String nameOfCountry, long population, long area) {
+		this.nameOfCountry = nameOfCountry;
+		this.population = population;
+		this.area = area;
+	}
+	
+	
+}

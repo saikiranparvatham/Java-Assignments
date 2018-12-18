@@ -1,0 +1,37 @@
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class CountryTest {
+	
+	static Country countriesArray[]=new Country[5];
+	
+	@BeforeClass
+	public static void setUp() {
+		
+		countriesArray[0]=new Country("India",1189172906,1269338);
+		
+		countriesArray[1]=new Country("Iceland",311058,39768);
+		
+		countriesArray[2]=new Country("Japan",12647664,145882);
+		
+		countriesArray[3]=new Country("Egypt",82079636,386660);
+		
+		countriesArray[4]=new Country("France",65312249,211208);
+
+	}
+	
+
+	@Test
+	public void testLargestArea(){
+		String result=Country.findLargestArea(countriesArray[0],countriesArray[1],countriesArray[2],countriesArray[3],countriesArray[4]);
+	}
+
+
+
+
+
+	
+}

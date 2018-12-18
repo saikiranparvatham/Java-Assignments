@@ -1,0 +1,33 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestTriangle {
+
+		Triangle triangle1=new Triangle(4,5,6);
+		
+	@Test
+	public void testEquilateral() {
+		boolean testResult=triangle1.isEquilateral();
+		assertFalse(testResult);
+	}
+	
+	@Test
+	public void testRight() {
+		boolean testResult=triangle1.isRight();
+		assertFalse(testResult);
+	}
+	
+	@Test
+	public void testScalene() {
+		boolean testResult=triangle1.isScalene();
+		assertTrue(testResult);
+	}
+	
+	@Test
+	public void testIsosceles() {
+		boolean testResult=triangle1.isIsosceles();
+	}
+
+}

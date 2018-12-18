@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class CountryTest {
+	
+
+	@BeforeClass
+	public void setUp() {
+		Country countriesArray[]=new Country[3];
+		
+		countriesArray[0]=new Country("India",1189172906,1269338);
+		countriesArray[1]=new Country("Iceland",311058,39768);
+		countriesArray[2]=new Country("Japan",12647664,145882);
+	}
+	
+	
+	
+}

@@ -1,0 +1,35 @@
+
+public class Country {
+	public String nameOfCountry;
+	public long population;
+	public long area;
+	
+	public Country(String nameOfCountry, long population, long area) {
+		this.nameOfCountry = nameOfCountry;
+		this.population = population;
+		this.area = area;
+	}
+	
+	public static String findLargestArea(Country[] countries)
+	{
+		long max=countries[0].area;
+		int tracker=0;
+		for(int counter=0;counter<countries.length;counter++)
+		{
+			if(max<countries[counter].area)
+			{
+				max=countries[counter].area;
+				tracker=counter;
+			}
+		}
+		String result=countries[tracker].nameOfCountry;
+		return result;
+	}
+
+	public static String findLargestArea() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

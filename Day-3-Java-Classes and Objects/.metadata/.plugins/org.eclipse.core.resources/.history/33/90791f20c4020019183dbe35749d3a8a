@@ -1,0 +1,16 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestTriangle {
+
+		Triangle triangle1=new Triangle(4,5,6);
+		
+	@Test
+	public void test() {
+		boolean testResult=triangle1.isScalene();
+		assertFalse(testResult);
+	}
+
+}
