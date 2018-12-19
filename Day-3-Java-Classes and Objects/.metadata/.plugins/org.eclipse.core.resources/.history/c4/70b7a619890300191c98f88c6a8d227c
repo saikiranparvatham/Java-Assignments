@@ -23,7 +23,7 @@ public class TestDate {
 	public void testDiff()
 	{
 		int[] result=date1.diff(date2);
-		int expected[]={26,3,13};
+		int expected[]={4866,159,13};
 		assertArrayEquals(result,expected);
 	}
 

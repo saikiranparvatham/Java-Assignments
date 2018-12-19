@@ -1,0 +1,18 @@
+package com.javabrahman.java8.time;
+ 
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
+ 
+public class test{
+  public static void main(String args[]){
+    LocalDate dateFrom = LocalDate.of(2015, Month.JULY, 12);
+    LocalDate dateTo = LocalDate.of(2016, Month.AUGUST, 22);
+ 
+    Period intervalPeriod = Period.between(dateFrom, dateTo);
+ 
+    System.out.println("Difference of days: " + intervalPeriod.getDays());
+    System.out.println("Difference of months: " + intervalPeriod.getMonths());
+    System.out.println("Difference of years: " + intervalPeriod.getYears());
+  }
+}

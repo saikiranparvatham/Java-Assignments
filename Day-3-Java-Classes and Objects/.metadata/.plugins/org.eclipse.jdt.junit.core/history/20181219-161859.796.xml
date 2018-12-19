@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestDate" project="Day-3-Java-Classes and Objects" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="TestDate" time="0.087">
-    <testcase name="testIsSmaller" classname="TestDate" time="0.001"/>
-    <testcase name="testDiff" classname="TestDate" time="0.074"/>
-    <testcase name="testToString" classname="TestDate" time="0.011"/>
-  </testsuite>
-</testrun>

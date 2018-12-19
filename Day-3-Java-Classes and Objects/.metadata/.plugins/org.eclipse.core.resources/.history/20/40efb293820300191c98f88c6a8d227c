@@ -4,12 +4,12 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.AfterClass;
+
 
 public class TestMoneyMoneyBank {
 	
 	
-	static MoneyMoneyBank customer1 = new MoneyMoneyBank("Ramesh kumar",300);
+	MoneyMoneyBank customer1 = new MoneyMoneyBank("Ramesh kumar",300);
 
 	@Test
 	public void testDeposit()
@@ -18,9 +18,8 @@ public class TestMoneyMoneyBank {
 		boolean result=customer1.deposit(25000);
 		assertTrue(result);
 	}
-	
-	@AfterClass
-	public static void testDetails() {
+	@Test
+	public void testDetails() {
 		customer1.display();
 	}
 	
@@ -31,11 +30,4 @@ public class TestMoneyMoneyBank {
 		assertTrue(result);
 	}
 	
-	@Test
-	public void testNextAccountNumber()
-	{
-		int result = MoneyMoneyBank.getNextAccountNumber();
-		System.out.println(result);
-	}
-
 }

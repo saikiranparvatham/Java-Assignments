@@ -17,6 +17,7 @@ public class Person
 	public String display() {
 		
 		Period intervalPeriod = Period.between(this.dateOfBirth, this.today);
+		System.out.println("Name:"+this.personName+" Date of Birth:"+this.dateOfBirth+" Age:"+intervalPeriod.getYears()+"years "+intervalPeriod.getMonths()+"Months "+intervalPeriod.getDays()+"Days");
 		
 		return "Name:"+this.personName+" Date of Birth:"+this.dateOfBirth+" Age:"+intervalPeriod.getYears()+"years "+intervalPeriod.getMonths()+"Months "+intervalPeriod.getDays()+"Days";
 	}
@@ -35,6 +36,8 @@ public class Person
 			younger = this.personName;
 		}
 		 Period intervalPeriod = Period.between(this.dateOfBirth, person2.dateOfBirth);
+		 
+		System.out.println(older+" is older than "+younger+" by "+intervalPeriod.getYears()+" years "+intervalPeriod.getMonths()+" months "+intervalPeriod.getDays()+" days");
 		
 		return older+" is older than "+younger+" by "+intervalPeriod.getYears()+" years "+intervalPeriod.getMonths()+" months "+intervalPeriod.getDays()+" days";
 	}

@@ -17,8 +17,9 @@ public class Person
 	public String display() {
 		
 		Period intervalPeriod = Period.between(this.dateOfBirth, this.today);
+		System.out.println(intervalPeriod.getYears());
 		
-		return "Name:"+this.personName+" Date of Birth:"+this.dateOfBirth+" Age:"+intervalPeriod.getYears()+"years "+intervalPeriod.getMonths()+"Months "+intervalPeriod.getDays()+"Days";
+		return "Name:"+this.personName+" Date of Birth:"+this.dateOfBirth+" Age:"+intervalYears+"years "+intervalMonths+"Months "+intervalDays+"Days";
 	}
 
 	public String olderOne(Person person2) {
@@ -35,6 +36,12 @@ public class Person
 			younger = this.personName;
 		}
 		 Period intervalPeriod = Period.between(this.dateOfBirth, person2.dateOfBirth);
+		 
+		 
+		/*long intervalYears = ChronoUnit.YEARS.between(this.dateOfBirth, person2.dateOfBirth);
+		long intervalMonths = ChronoUnit.MONTHS.between(this.dateOfBirth, person2.dateOfBirth);
+		long intervalDays = ChronoUnit.DAYS.between(this.dateOfBirth, person2.dateOfBirth);
+		*/
 		
 		return older+" is older than "+younger+" by "+intervalPeriod.getYears()+" years "+intervalPeriod.getMonths()+" months "+intervalPeriod.getDays()+" days";
 	}
