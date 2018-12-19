@@ -1,0 +1,22 @@
+
+
+	import java.time.LocalDate;
+	import java.time.Month;
+	import java.time.temporal.ChronoUnit;
+	 
+	public class test {
+	  public static void main(String args[]){
+	    LocalDate dateFrom = LocalDate.of(2015,7, 12);
+	    LocalDate dateTo = LocalDate.of(2016,5, 22);
+	     
+	    long intervalYears = ChronoUnit.YEARS.between(dateFrom, dateTo);
+	    System.out.println("Total number of years between dates: " + intervalYears);
+	     
+	    long intervalMonths = ChronoUnit.MONTHS.between(dateFrom, dateTo);
+	    System.out.println("Total number of months between dates: " + intervalMonths);
+	     
+	    long intervalDays = ChronoUnit.DAYS.between(dateFrom, dateTo);
+	    System.out.println("Total number of days between dates:" + intervalDays);
+	  }
+	}
+

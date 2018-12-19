@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testPerson" project="Day-3-Java-Classes and Objects" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="testPerson" time="0.072">
+    <testcase name="testOlderOne" classname="testPerson" time="0.069"/>
+    <testcase name="testDisplay2" classname="testPerson" time="0.002"/>
+    <testcase name="testDisplay" classname="testPerson" time="0.001"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestDate {
+	Date date1 = new Date(21,5,1998);
+	
+	@Test
+	public void testToString() {
+		String result = date1.toStRing();
+		
+	}
+
+}

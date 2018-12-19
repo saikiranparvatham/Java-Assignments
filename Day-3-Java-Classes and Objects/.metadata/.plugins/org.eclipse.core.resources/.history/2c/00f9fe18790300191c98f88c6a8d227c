@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+
+
+public class Date {
+
+	private LocalDate date;
+	public Date(int date, int month, int year) {
+		this.date=LocalDate.of(year, month, date);
+	}
+
+	public String toStRing() {
+		String result=this.date.toString();
+		System.out.println(result);
+		return null;
+	}
+	
+	
+
+}

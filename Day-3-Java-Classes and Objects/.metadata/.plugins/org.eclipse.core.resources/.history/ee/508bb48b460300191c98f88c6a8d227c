@@ -1,0 +1,39 @@
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalUnit;
+
+
+public class Person {
+
+	public String personName;
+	//private int date;
+	//private TemporalUnit month;
+	//private int year;
+	public String formattedDateOfBirth;
+	public LocalDate dateOfBirth;
+	//private Object amount;
+	LocalDate today=LocalDate.now();
+
+	public Person(String name, int date, int month, int year) {
+		this.personName=name;
+		//this.date=date;
+		//this.month=month;
+		//this.year=year;
+		this.dateOfBirth=LocalDate.of(date, month, year);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+		this.formattedDateOfBirth = this.dateOfBirth.format(formatter);
+	}
+
+	public String display() {
+		//amount=dateOfBirth.until(today,month);
+		Period intervalPeriod = Period.between(this.dateOfBirth, this.today);
+		System.out.println( "Name:"+this.personName+
+				"Date of Birth:"+this.formattedDateOfBirth+
+				"Age:"+ intervalPeriod.getYears()+" Years,"+intervalPeriod.getMonths()+"Months,"+intervalPeriod.getDays()+" Days");
+		return "Name:"+this.personName+
+				"Date of Birth:"+this.formattedDateOfBirth+
+				"Age:"+ intervalPeriod.getYears()+" Years,"+intervalPeriod.getMonths()+"Months,"+intervalPeriod.getDays()+" Days";
+	}
+
+}

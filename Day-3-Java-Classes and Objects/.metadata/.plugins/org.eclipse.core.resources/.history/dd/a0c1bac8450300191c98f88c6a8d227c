@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class testPerson {
+
+	Person person1=new Person("Ram", 5, 6, 1980);
+	Person person2=new Person("Shyam", 2, 3, 1987);
+	
+	@Test
+	public void test() {
+		String result=person1.display();
+		
+	}
+
+}

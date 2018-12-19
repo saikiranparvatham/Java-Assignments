@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import java.time.Month;
+
+import org.junit.Test;
+
+
+public class testPerson {
+
+	Person person1=new Person("Ram", 2015, Month.JULY, 12);
+	//Person person2=new Person("Shyam", 2, 3, 1987);
+	
+	@Test
+	public void test() {
+		String result=person1.display();
+		assertNotEquals(result,"this");
+	}
+
+}

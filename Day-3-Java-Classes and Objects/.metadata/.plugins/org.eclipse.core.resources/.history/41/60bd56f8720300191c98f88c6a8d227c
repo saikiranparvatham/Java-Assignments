@@ -1,0 +1,27 @@
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+public class Person
+{
+
+	private Object personName;
+	private LocalDate dateOfBirth;
+	LocalDate today = LocalDate.of(2018,12,19);
+	
+	public Person(String name, int date, int month, int year) {
+		this.personName=name;
+		this.dateOfBirth = LocalDate.of(year,month, date);
+	}
+
+	public String display() {
+		long intervalYears = ChronoUnit.YEARS.between(this.dateOfBirth, today);
+		long intervalMonths = ChronoUnit.MONTHS.between(this.dateOfBirth, today);
+		long intervalDays = ChronoUnit.DAYS.between(this.dateOfBirth, today);
+		
+		System.out.println("Name:"+this.personName+"\nDate of Birth:"+this.dateOfBirth+"\nAge:"+intervalYears+"years "+intervalMonths+"Months "+intervalDays+"Days");
+		return null;
+	}
+	
+	
+	
+}

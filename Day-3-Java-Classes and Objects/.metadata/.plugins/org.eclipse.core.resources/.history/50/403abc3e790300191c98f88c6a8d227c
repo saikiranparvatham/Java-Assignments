@@ -1,0 +1,21 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+
+public class Date {
+
+	private LocalDate date;
+	public Date(int date, int month, int year) {
+		this.date=LocalDate.of(year, month, date);
+	}
+
+	public String toStRing() {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+		String result=this.date.format(formatter);
+		System.out.println(result);
+		return null;
+	}
+	
+	
+
+}

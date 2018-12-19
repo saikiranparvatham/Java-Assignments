@@ -1,0 +1,48 @@
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+public class Person
+{
+
+	private Object personName;
+	private LocalDate dateOfBirth;
+	LocalDate today = LocalDate.of(2018,12,19);
+	
+	public Person(String name, int date, int month, int year) {
+		this.personName=name;
+		this.dateOfBirth = LocalDate.of(year,month, date);
+	}
+
+	public String display() {
+		long intervalYears = ChronoUnit.YEARS.between(this.dateOfBirth, today);
+		long intervalMonths = ChronoUnit.MONTHS.between(this.dateOfBirth, today);
+		long intervalDays = ChronoUnit.DAYS.between(this.dateOfBirth, today);
+		
+		
+		return "Name:"+this.personName+" Date of Birth:"+this.dateOfBirth+" Age:"+intervalYears+"years "+intervalMonths+"Months "+intervalDays+"Days";
+	}
+
+	public String olderOne(Person person2) {
+		Object older ;
+		Object younger;
+		if(this.dateOfBirth.getYear() < person2.dateOfBirth.getYear())
+		{
+			older = this.personName;
+			younger = person2.personName;
+		}
+		else
+		{
+			older = person2.personName;
+			younger = this.personName;
+		}
+		long intervalYears = ChronoUnit.YEARS.between(this.dateOfBirth, person2.dateOfBirth);
+		long intervalMonths = ChronoUnit.MONTHS.between(this.dateOfBirth, person2.dateOfBirth);
+		long intervalDays = ChronoUnit.DAYS.between(this.dateOfBirth, person2.dateOfBirth);
+		
+		System.out.println(older+" is older than "+younger+" by "+intervalYears+" years "+intervalMonths+" months "+intervalDays+" days");
+		return older+" is older than "+younger+" by "+intervalYears+" years "+intervalMonths+" months "+intervalDays+" days;
+	}
+	
+	
+	
+}
