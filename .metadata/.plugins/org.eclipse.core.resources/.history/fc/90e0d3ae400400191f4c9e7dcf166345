@@ -1,0 +1,17 @@
+package com.capg;
+public class CorporateTraining extends Training {
+
+	private int days;
+	
+	public CorporateTraining(int id,String subject,int days)
+	{
+		super(id,subject,fees);
+		this.days=days;
+	}
+	
+	public double getOrderValue()
+	{
+		return fees*days;
+	}
+	
+}

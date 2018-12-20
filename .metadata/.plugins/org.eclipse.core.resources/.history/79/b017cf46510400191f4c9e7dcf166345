@@ -1,0 +1,26 @@
+package com.capg;
+
+public class Training {
+	
+	private int Id;
+	private String subject;
+	protected static double fees;
+
+
+	public Training(int id,String subject,double fees)
+	{
+		this.Id = id;
+		this.subject = subject;
+		Training.fees = fees;
+	}
+	
+	public int getId()
+	{
+		return this.Id;
+	}
+	
+	public double getFees()
+	{
+		return Training.fees;
+	}
+}

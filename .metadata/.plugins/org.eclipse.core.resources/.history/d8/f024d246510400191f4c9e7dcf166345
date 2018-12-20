@@ -1,0 +1,21 @@
+package com.capg;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestTraining {	
+	Training publicTraining;
+	//PublicTraining batch1 = new PublicTraining(103,"Dotnet",12000,15)
+	//batch1 = new CorporateTraining(102,"Java",5000,50);
+
+	@Test
+	public void test() 
+	{
+		publicTraining = new PublicTraining(102,"Java",5000,50);
+		double result = ((PublicTraining) publicTraining).getOrderValue();
+		assertEquals(5000*50,result,0.01);
+	}
+
+}

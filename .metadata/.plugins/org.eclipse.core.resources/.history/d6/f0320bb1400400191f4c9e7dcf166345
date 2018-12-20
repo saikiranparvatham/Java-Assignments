@@ -1,0 +1,17 @@
+package com.cg;
+public class PublicTraining extends Training {
+
+	int numberOfParticipants;
+	PublicTraining(int id,String subject,double fees,int participants)
+	{
+		super(id,subject,fees);
+		this.numberOfParticipants=participants;
+			
+	}
+	
+	public double getOrderValue()
+	{
+		return fees*numberOfParticipants;
+	}
+	
+}
