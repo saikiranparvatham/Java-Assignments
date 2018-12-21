@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class FileExistOrNot {
+
+	
+	public  boolean checkFile(String string) {
+		File file = new File(string);
+		
+		if(file.exists())
+		{
+			return true;
+		}
+		else
+		return false;
+	}
+
+}

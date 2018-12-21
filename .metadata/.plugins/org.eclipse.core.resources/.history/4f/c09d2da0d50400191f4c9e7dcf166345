@@ -1,0 +1,15 @@
+
+public abstract class SavingAcc extends BankAccount {
+	
+	private boolean isSalaried;
+	private float MINBAL;
+	
+	public SavingAcc(int AccNo,String accNm,double accBal,boolean isSalaried)
+	{
+		super(AccNo,accNm,accBal);
+	}
+	
+	public abstract void withdraw(float money);
+	
+	public abstract String toString();
+}

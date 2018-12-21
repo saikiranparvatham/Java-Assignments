@@ -1,0 +1,19 @@
+
+public abstract class BankAcc {
+	
+	private int accNo;
+	private String accNm;
+	private float accBal;
+	
+	public BankAcc(int accNo, String accNm, double accBal)
+	{
+		
+	}
+	
+	public abstract void withdraw(double money);
+	
+	public abstract void deposite(double money);
+	
+	public abstract String toString(); 
+	
+}

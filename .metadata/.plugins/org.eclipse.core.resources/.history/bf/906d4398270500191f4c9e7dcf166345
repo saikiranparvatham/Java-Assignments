@@ -1,0 +1,7 @@
+
+public abstract interface BankFactory {
+	
+	public  getNewSavingAcc(int AccountNumber,String accountHolderName,double accountBalance,boolean isSalaried);
+	
+	public
+}

@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestWordCount {
+
+	WordCount newObject = new WordCount();
+	
+	@Test
+	public void testWordCount() throws Exception {
+		
+		int numberOfWords = newObject.countWords("C:/New folder/New Text Document.txt");
+		assertEquals(12,numberOfWords);
+	}
+
+}

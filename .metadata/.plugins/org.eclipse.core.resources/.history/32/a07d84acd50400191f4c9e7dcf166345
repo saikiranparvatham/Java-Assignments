@@ -1,0 +1,11 @@
+
+public abstract class CurrentAcc extends BankAccount {
+
+	
+	public CurrentAcc(int accNo, String accNm, double accBal,double creditLimit) {
+		super(accNo, accNm, accBal);
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+}

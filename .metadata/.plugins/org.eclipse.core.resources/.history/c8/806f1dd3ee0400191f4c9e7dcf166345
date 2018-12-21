@@ -1,0 +1,20 @@
+import java.io.File;
+import java.io.FileInputStream;
+
+public class LineCount {
+	
+   public int countLines(String path) throws Exception{
+   
+      File file = new File(path);
+      FileInputStream filestream = new FileInputStream(file);
+      
+      byte[] byteArray = new byte[(int)file.length()];
+      filestream.read(byteArray);
+      String data = new String(byteArray);
+      String[] stringArray = data.split("\r\n");
+      filestream.close();
+      return stringArray.length;
+     
+   }
+}
+

@@ -1,0 +1,46 @@
+
+
+
+public abstract class BankAccount {
+	
+	private int accountNumber;
+	private String accountHoldrName;
+	private double accountBalance;
+	
+	public BankAccount(int accountNumber, String accountHolderName, double accountBalance)
+	{
+		
+	}
+	
+	public boolean withDraw(double money)
+	{
+		if(accountBalance < money )
+		{
+		 return false;
+		}
+		else
+		{
+			accountBalance=accountBalance-money;
+			return true;
+		}
+	}
+	
+	public boolean deposite(double money)
+	{
+		if(money>0)
+		{
+		accountBalance=accountBalance+money;
+		return true;
+		}
+		else
+			return false;
+	}
+	
+	
+	public String toString() {
+		return "BankAccount [accountNumber=" + accountNumber
+				+ ", accountHoldrName=" + accountHoldrName
+				+ ", accountBalance=" + accountBalance + "]";
+	} 
+	
+}

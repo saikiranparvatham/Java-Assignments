@@ -1,0 +1,7 @@
+1545365105749	Rename type 'BankAcc'
+1545365117451	Rename type 'SavingAcc'
+1545365138128	Rename type 'CurrentAcc'
+1545365239498	Rename field 'accNo'
+1545365259373	Rename field 'accNm'
+1545365276703	Rename field 'accBal'
+1545402022335	Encapsulate field 'accountBalance'

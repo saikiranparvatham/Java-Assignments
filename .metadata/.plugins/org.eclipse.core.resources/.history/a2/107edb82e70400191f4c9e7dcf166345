@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestFileExistOrNot {
+
+	FileExistOrNot newObject = new FileExistOrNot();
+	@Test
+	public void test() {
+		boolean result = newObject.checkFile("C:/New folder/New Text Document");
+		assertEquals(result,true);
+	}
+
+}
