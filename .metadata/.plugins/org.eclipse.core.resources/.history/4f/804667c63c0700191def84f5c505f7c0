@@ -1,0 +1,21 @@
+package BasicCollections1;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+public class TestBasicCollections {
+
+	Laptop laptop1 = new Laptop ("Dell","Inspiron", "MS dos","pentium");
+	ArrayList<Laptop> laptopCollection = new ArrayList<Laptop>();
+	
+	
+	@Test
+	public void test() {
+		laptopCollection.add(laptop1);
+	}
+
+}

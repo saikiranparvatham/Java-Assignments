@@ -4,9 +4,9 @@ public class MMSavingAccount extends SavingAccount{
 		private static final double minimumBalance = 2000;
 		
 		public MMSavingAccount(int AccountNumber,String accountHolderName,double accountBalance,boolean isSalaried)
-		{
+		{	
 			super(AccountNumber,accountHolderName,accountBalance,isSalaried);
-
+			
 		}
 
 		@Override
@@ -18,13 +18,27 @@ public class MMSavingAccount extends SavingAccount{
 
 
 		@Override
-		public void withDraw(float money) {
-			if(super.getSalary()- money > minimumBalance)
+		public boolean withDraw(double money) {
+			if(super.getBalance()- money > minimumBalance)
 			{
-				super.setAccountBalance(super.getSalary()-money) ;
+				super.setAccountBalance(super.getBalance()-money) ;
+				return true ; 
 			}
-			
+			else
+			{
+				return false;
+			}
+				
 		}
+
+		
+		@Override
+		public boolean deposite(double money) {
+			super.setAccountBalance(super.getAccountBalance()+money);
+			return super.deposite(money);
+		}
+
+		
 		
 		
 }

@@ -1,0 +1,24 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class TestEmployee {
+
+	Employee employeeObject = new Employee(101,"Ramesh",12000);
+	
+	@Before
+	public void test() {
+		employeeObject.persist(employeeObject);
+	}
+	
+	@Test
+	public void test2() {
+		employeeObject.read();
+		System.out.println(result.getName());
+	}
+	
+	
+	
+}

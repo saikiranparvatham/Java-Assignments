@@ -6,9 +6,12 @@ public abstract class BankAccount {
 	private int accountNumber;
 	private String accountHolderName;
 	private double accountBalance;
-	
+	private int number=10000;
 	public BankAccount(int accountNumber, String accountHolderName, double accountBalance)
 	{
+		this.accountNumber = number++;
+		this.accountHolderName = accountHolderName;
+		
 		this.setAccountBalance(accountBalance);
 	}
 	
@@ -39,7 +42,7 @@ public abstract class BankAccount {
 	
 	public String toString() {
 		return "BankAccount [accountNumber=" + accountNumber
-				+ ", accountHoldrName=" + accountHoldrName
+				+ ", accountHoldrName=" + accountHolderName
 				+ ", accountBalance=" + getAccountBalance() + "]";
 	}
 

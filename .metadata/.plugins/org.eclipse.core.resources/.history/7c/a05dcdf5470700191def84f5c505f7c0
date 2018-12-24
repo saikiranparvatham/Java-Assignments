@@ -1,0 +1,23 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+
+public class PersistAndReadObjectFromFile {
+	
+	Employee employeeObject = new Employee(101,"Ramesh",12000);
+	
+	try{
+	FileOutputStream fileoutput = new FileOutputStream("C:/Employee/employee.txt");
+	
+	ObjectOutputStream objectOutput = new ObjectOutputStream(fileoutput);
+	objectOutput.writeObject(employeeObject);
+	fileoutput.close();
+	objectOutput.close();
+		}
+	catch(IOException ex)
+	{
+		System.out.println("filenotfound");
+	}
+	
+}

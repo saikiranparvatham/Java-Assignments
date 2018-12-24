@@ -1,7 +1,7 @@
 
 public abstract class CurrentAccount extends BankAccount {
 
-	private double creditLimit;
+	protected double creditLimit;
 	public CurrentAccount(int accountNumber, String accountHolderName, double accountBalance,double creditLimit) {
 		super(accountNumber, accountHolderName, accountBalance);
 		

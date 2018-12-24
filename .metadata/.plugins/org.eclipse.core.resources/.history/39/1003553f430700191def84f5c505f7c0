@@ -1,0 +1,22 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestSavingsBankAccount {
+	
+	
+	@Test
+	public void test1() {
+		MMSavingAccount newObject = new MMSavingAccount(10002,"Ramesh kumar", 3000,true);
+		newObject.withDraw(500);
+		assertEquals(2500,newObject.getAccountBalance(),0.01);
+	}
+		
+
+	@Test
+	public void test2() {
+		
+	}
+	
+	}

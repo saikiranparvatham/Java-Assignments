@@ -1,0 +1,38 @@
+package BasicCollections1;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+public class TestBasicCollections {
+
+	Laptop laptop1 = new Laptop ("Dell","Inspiron", "MS dos","pentium");
+	
+	Laptop laptop2 = new Laptop ("Lenovo","Yoga", "windows","i5");
+	
+	Laptop laptop3 = new Laptop ("Acer","Aspire", "Linux","i3");
+	
+	ArrayList<Laptop> laptopCollection = new ArrayList<Laptop>();
+	
+	
+	@Test
+	public void testInitialization() {
+		laptopCollection.add(laptop1);
+		
+		laptopCollection.add(laptop2);
+		
+		laptopCollection.add(laptop3);
+		System.out.println(laptopCollection.get(1).company);
+		//assertEquals(laptopCollection.get(0),);
+	}
+	
+	@Test
+	public void testLaptopCollection() {
+		
+	//	assert
+	}
+
+}

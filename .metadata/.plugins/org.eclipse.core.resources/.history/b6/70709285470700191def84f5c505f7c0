@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestPersistAndReadObjectFromFile {
+	Employee employeeObject = new Employee(101,"Ramesh",12000);
+	
+	@Test
+	public void test() {
+		
+	employeeObject.persist(employeeObject);
+	}
+
+}

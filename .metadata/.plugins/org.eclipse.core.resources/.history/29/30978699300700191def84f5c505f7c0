@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestBankAccount {
+
+	@Test
+	public void test() {
+		MMSavingAccount newObject = new MMSavingAccount(10002,"Ramesh kumar", 5000,true);
+	}
+
+}

@@ -10,7 +10,7 @@ public abstract class SavingAccount extends BankAccount {
 		this.isSalaried = isSalaried;
 	}
 	
-	public abstract void withDraw(float money);
+	public abstract boolean withDraw(double money);
 
 	@Override
 	public String toString() {
@@ -20,7 +20,7 @@ public abstract class SavingAccount extends BankAccount {
 				+ "]";
 	}
 	
-	public double getSalary()
+	public double getBalance()
 	{
 		
 		return super.getAccountBalance();

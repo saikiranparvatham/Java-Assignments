@@ -1,0 +1,19 @@
+package BasicCollections1;
+
+public class Laptop {
+
+	public String company;
+	public String model;
+	public String operatingSystem;
+	public String processor;
+	
+	public Laptop(String company,String model,String operatingSystem,String processor)
+	{
+		this.company = company;
+		this.model = model;
+		this.operatingSystem = operatingSystem;
+		this.processor = processor;
+ 	}
+	
+	
+}
