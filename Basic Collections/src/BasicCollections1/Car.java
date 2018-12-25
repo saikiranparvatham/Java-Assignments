@@ -1,15 +1,15 @@
-package BasicCollections1;
 
-public class Car {
+package BasicCollections1;
+public class Car implements Comparable<Car> {								
 	String make;
-	String model;
+	String model;									//Instance fields
 	int year; 
 	int price;
 	
 	public Car(String make, String model, int year, int price) {
 		super();
 		this.make = make;
-		this.model = model;
+		this.model = model;							//Constructor
 		this.year = year;
 		this.price = price;
 	}
@@ -17,11 +17,11 @@ public class Car {
 	/**
 	 * @return the make
 	 */
-	public String getMake() {
+	public String getMake() {							
 		return make;
 	}
 
-
+			
 	/**
 	 * @return the model
 	 */
@@ -49,8 +49,8 @@ public class Car {
 
 
 
-	@Override
-	public int hashCode() {
+	@Override	
+	public int hashCode() {									//Method Overriding hashcode
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((make == null) ? 0 : make.hashCode());
@@ -61,7 +61,7 @@ public class Car {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) {						//Method overriding equals with our own requirement of comparison
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -79,13 +79,28 @@ public class Car {
 				return false;
 		} else if (!model.equals(other.model))
 			return false;
-		if (price != other.price)
-			return false;
-		if (year != other.year)
-			return false;
+		
 		
 		return (this.getMake()==((Car)obj).getMake()) && (this.getModel() == ((Car)obj).getModel());
 	}
+
+
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Car [make=" + make + ", model=" + model + ", year=" + year
+				+ ", price=" + price + "]";
+	}
+
+	@Override										//Comparator method which overrides and implements our own sorting requirement
+	public int compareTo(Car object) {
+		return getMake().compareTo((object).getMake());
+		
+	}
+	
 	
 	
 	
